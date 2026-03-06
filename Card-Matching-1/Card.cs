@@ -68,6 +68,7 @@ class Game
 
     public void Difficulty()
     {
+        Console.Clear();
         Console.WriteLine("난이도를 선택하세요: ");
         Console.WriteLine("1.쉬움(2x4)");
         Console.WriteLine("2.보통(4x4)");
@@ -111,7 +112,7 @@ class deck
         {
             case 1:
                 row = 2;
-                canTry = 1;
+                canTry = 10;
                 break;
             case 2:
                 row = 4;
