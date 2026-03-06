@@ -58,7 +58,7 @@ class Game
             if (d.PairCount == d.pair)
             {
                 Console.WriteLine("=== 게임 클리어! 축하합니다! ===");
-                break;
+                return;
             }
         }
 
