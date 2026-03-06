@@ -12,7 +12,7 @@ enum Difficulty
 
 class Game
 {
-    deck d;
+    Deck d;
 
     public Game()
     {
@@ -81,7 +81,7 @@ class Game
             if (int.TryParse(Console.ReadLine(), out int value) &&
                 Enum.IsDefined(typeof(Difficulty), value))
             {
-                d = new deck(value);
+                d = new Deck(value);
                 break;
             }
             else
@@ -94,7 +94,7 @@ class Game
 
 }
 
-class deck
+class Deck
 {
     public int[,] board {get; private set; }
     public bool[,] matchBoard { get; set; }
@@ -106,7 +106,7 @@ class deck
     public int tryCount { get; set; }
     public int[] cards { get; private set; }
 
-    public deck(int difficulty)
+    public Deck(int difficulty)
     {
         switch (difficulty)
         {
