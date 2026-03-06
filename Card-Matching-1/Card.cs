@@ -139,7 +139,7 @@ class deck
 
         Random rand = new Random();
 
-        int input = 1;
+        int input = 0;
         int index = 0;
 
         for (int i = 0; i < cards.Length; i++)
